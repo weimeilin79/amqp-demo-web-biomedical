@@ -7,7 +7,7 @@ Setup and Configuration
 -----------------------
 
 
-- Download JBoss A-MQ product from RED HAT (version 6.1) 
+- Download JBoss A-MQ product from RED HAT (version 6.1) into install folder
 
 - run 'init.sh' 
 
