@@ -37,7 +37,7 @@ See the tagged releases for the following versions of the product:
 
 - v0.1 - JBoss A-MQ 6.1 and biometric dashboard installed.
 
-![Biometrical Dashbaord](https://github.com/eschabell/amqp-demo-web-biomedical/blob/master/docs/demo-images/bio-dashboard.png?raw=true)
+![Biometrical Dashbaord](https://github.com/weimeilin79/amqp-demo-web-biomedical/blob/master/docs/demo-images/bio-dashboard.png?raw=true)
 
-![Install Console](https://github.com/eschabell/amqp-demo-web-biomedical/blob/master/docs/demo-images/install-console.png?raw=true)
+![Install Console](https://github.com/weimeilin79/amqp-demo-web-biomedical/blob/master/docs/demo-images/install-console.png?raw=true)
 
