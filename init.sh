@@ -105,7 +105,7 @@ cd $PRJ_DIR
 mvn clean install -DskipTests
 
 echo
-echo "You have two steps to start the demo:
+echo You have two steps to start the demo:
 echo
 echo "First you can start the WEB Dashboard in $PRJ_DIR by executing 'mvn jetty:run'"
 echo
