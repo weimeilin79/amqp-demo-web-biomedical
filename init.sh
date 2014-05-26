@@ -92,6 +92,7 @@ read var_key
 if [ "$var_key" = "y" ]
 then
 		echo "WEB Dashboard will start soon, don't forget to start up A-MQ too!See README.MD"
+		cd $PRJ_DIR
     mvn jetty:run
 else
     echo "You Choose not to start up web server now, you may manually starup later by running startupServer.sh later. See README.MD"    
