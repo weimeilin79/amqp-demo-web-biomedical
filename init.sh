@@ -1,17 +1,43 @@
 #!/bin/sh 
 DEMO="JBoss A-MQ Biomedical Signals Sensor Demo"
 VERSION=6.1.0
+AUTHORS="Christina Lin"
+PROJECT="git@github.com:weimeilin79/amqp-demo-web-biomedical.git"
 AMQ=jboss-a-mq-6.1.0.redhat-379
 AMQ_BIN=jboss-a-mq-6.1.0.redhat-379.zip
 DEMO_HOME=./target
 AMQ_HOME=$DEMO_HOME/$AMQ
 SERVER_CONF=$AMQ_HOME/etc
+SERVER_BIN=$AMQ_HOME/bin
 SRC_DIR=./installs
 PRJ_DIR=./projects/amqp-example-web
 
+# wipe screen.
+clear 
+
+# add executeable in installs
+chmod +x installs/*.zip
+
 
 echo
-echo "Setting up the Red Hat ${DEMO} environment..."
+echo "#################################################################"
+echo "##                                                             ##"   
+echo "##  Setting up the ${DEMO}   ##"
+echo "##                                                             ##"   
+echo "##                                                             ##"   
+echo "##                 ###        #   #   ###                      ##"
+echo "##                #   #       ## ##  #   #                     ##"
+echo "##                #####  ###  # # #  #   #                     ##"
+echo "##                #   #       #   #  #  ##                     ##"
+echo "##                #   #       #   #   #####                    ##"
+echo "##                                                             ##"   
+echo "##                                                             ##"   
+echo "##  brought to you by,                                         ##"   
+echo "##                    ${AUTHORS}                            ##"
+echo "##                                                             ##"   
+echo "##  ${PROJECT}    ##"
+echo "##                                                             ##"   
+echo "#################################################################"
 echo
 
 # double check for maven.
@@ -79,21 +105,13 @@ cd $PRJ_DIR
 mvn clean install -DskipTests
 
 echo
-echo To get started see the README.md file:
+echo "You have two steps to start the demo:
 echo
-cd ../..
-cat README.md
+echo "First you can start the WEB Dashboard in $PRJ_DIR by executing 'mvn jetty:run'"
+echo
+echo "Then you need to start the $PRODUCT with $SERVER_BIN/amq"
+echo
 
 echo Red Hat $DEMO $VERSION Setup Completed.
 echo
 
-echo "Enter [y] to start Dashboard, other key to skip startup: "
-read var_key
-if [ "$var_key" = "y" ]
-then
-		echo "WEB Dashboard will start soon, don't forget to start up A-MQ too!See README.MD"
-		cd $PRJ_DIR
-    mvn jetty:run
-else
-    echo "You Choose not to start up web server now, you may manually starup later by running startupServer.sh later. See README.MD"    
-fi
