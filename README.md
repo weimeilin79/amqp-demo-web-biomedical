@@ -15,7 +15,7 @@ Setup and Configuration
    go to ./target/jboss-a-mq-{$version}/bin
    execute JBoss A-MQ by executing ./amq
 
-- if you have not choose to startup web server, please execute startupServer.sh 
+- First you can start the WEB Dashboard in project/amqp-example-web by executing 'mvn jetty:run'
 
 - verify Biomedical Signals Sensor Monitor DashBoard
 
